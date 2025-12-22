@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Participation Verification - NAEMT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #E8E8E8;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        .header {
+            background-color: #2B7ABC;
+            padding: 12px 20px;
+            border-bottom: 4px solid #1E5A8A;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 64px;
+            width: auto;
+        }
+
+        .header-title {
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .header-spacer {
+            width: 160px;
+        }
+
+        .intro-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 14px;
+            color: #1a1a1a;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .intro-text.bold {
+            font-weight: bold;
+        }
+
+        .removed-element-spacer {
+            height: 80px;
+        }
+
+        .card-container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 0 20px 50px;
+        }
+
+        .info-card {
+            background-color: #D9D9D9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            padding: 24px;
+        }
+
+        .field-group {
+            margin-bottom: 16px;
+        }
+
+        .field-label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .field-value {
+            background-color: white;
+            border: 1px solid #c0c0c0;
+            border-radius: 4px;
+            padding: 8px 12px;
+            color: #1e5a8a;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .field-value.large {
+            min-height: 60px;
+        }
+
+        .field-value.pass {
+            color: #2d7a2d;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .flex-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .width-28 {
+            width: 112px;
+        }
+
+        .width-24 {
+            width: 96px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .exit-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        .exit-button {
+            background-color: #d9d9d9;
+            border: 1px solid #999;
+            border-radius: 8px;
+            padding: 12px 32px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            cursor: default;
+        }
+
+        .exit-icon {
+            width: 20px;
+            height: 20px;
+            color: #4a4a4a;
+        }
+
+        .exit-text {
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+
+        .footer-stripe {
+            height: 8px;
+            background-color: #2B7ABC;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header-spacer {
+                display: none;
+            }
+
+            .header-title {
+                font-size: 22px;
+                padding: 0;
+            }
+
+            .logo {
+                height: 50px;
+            }
+
+            .flex-row {
+                flex-direction: column;
+            }
+
+            .width-28, .width-24 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="https://www.naemt.org/education"><img 
+                src="NAEMT_logo_notag_reverse.png_76345.png_66762.png" 
+                alt="NAEMT Logo" 
+                class="logo"
+            /></a>
+            <h1 class="header-title">
+                Course Participation Verification
+            </h1>
+            <div class="header-spacer"></div>
+        </div>
+    </header>
+
+    <div class="intro-section">
+        <p class="intro-text">
+            <!-- <strong>On each certificate produced by the National Association of Emergency Medical Technicians (NAEMT) is a unique code to provide verification of certificate authenticity.</strong> -->
+        </p>
+        <p class="intro-text bold">
+            <!-- By entering a valid code below, you will be presented with the actual student data for this certificate. This system validates certificates issued in the last 5 years. -->
+        </p>
+    </div>
+
+    <div class="removed-element-spacer"></div>
+
+    <div class="card-container">
+        <div class="info-card">
+            
+            <div class="field-group">
+                <label class="field-label">Name</label>
+                <div class="field-value">
+                    MOHAMMED MAJRASHI, HASSAN
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label class="field-label">Program - Course Type</label>
+                <div class="flex-row">
+                    <div class="field-value" style="width: 112px;">
+                        SAFETY
+                    </div>
+                    <div class="field-value flex-1">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <label class="field-label">NAEMT Course No.</label>
+                        <div class="field-value">
+                            SF-25-19419-03
+                        </div>
+                    </div>
+                    <div class="width-28">
+                        <label class="field-label text-center">Status</label>
+                        <div class="field-value pass">
+                            Pass
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <label class="field-label">Course Start Date</label>
+                        <div class="field-value text-center">
+                            11/14/2025
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <label class="field-label">Course End Date</label>
+                        <div class="field-value text-center">
+                            11/14/2025
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <label class="field-label">Exp. Date</label>
+                        <div class="field-value text-center">
+                            11/2029
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="flex-row">
+                    <div class="flex-1">
+                        <label class="field-label">Course Sponsor</label>
+                        <div class="field-value large">
+                            Journey of Life
+                        </div>
+                    </div>
+                    <div class="width-24">
+                        <label class="field-label text-center">CEU's</label>
+                        <div class="field-value text-center">
+                            8.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="exit-container">
+            <a href="https://www.naemt.org/education" style="text-decoration: none;">
+            <div class="exit-button">
+                <svg class="exit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+                <span class="exit-text">Exit Screen</span>
+            </div></a>
+        </div>
+    </div>
+
+    <div class="footer-stripe"></div>
+
+</body>
+</html>

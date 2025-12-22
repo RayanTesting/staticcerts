@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification - National Life Support Committee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Open Sans',sans-serif;}
+        body { background-color:#f5f5f5; min-height:100vh; display:flex; flex-direction:column;}
+        a { text-decoration:none; color:inherit;}
+        .container { max-width:1200px; margin:0 auto; padding:0 1rem;}
+        /* Top Bar */
+        .top-bar { background-color:#00232D; color:white; }
+        .top-bar-content { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 0; font-size:0.875rem;}
+        .top-bar-left { display:flex; align-items:center; gap:1.5rem;}
+        .top-bar-link { display:flex; align-items:center; gap:0.5rem; color:rgba(255,255,255,0.9); transition:color 0.3s;}
+        .top-bar-link:hover { color:white;}
+        .top-bar-right { display:flex; align-items:center; gap:1rem;}
+        /* Header */
+        header { background-color:#00232D; border-top:1px solid rgba(255,255,255,0.1);}
+        .header-content { display:flex; align-items:center; justify-content:space-between; padding:1rem 0;}
+        .logo-section svg { width:50px; height:50px; }
+        .header-icons { display:flex; align-items:center; gap:1rem;}
+        .icon-button { position:relative; color:rgba(255,255,255,0.8); background:none; border:none; padding:0.5rem; cursor:pointer; transition:color 0.3s;}
+        .icon-button:hover { color:white;}
+        .notification-badge { position:absolute; top:-0.25rem; right:-0.25rem; background-color:#e74c3c; color:white; font-size:0.75rem; width:1.25rem; height:1.25rem; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:600;}
+        /* Main Content */
+        main { flex:1; background-color:#f5f5f5; padding:3rem 0;}
+        .page-title { text-align:center; margin-bottom:2rem;}
+        .page-title h2 { font-size:1.5rem; font-weight:bold; color:#333;}
+        .certificate-card { max-width:56rem; margin:50px auto; background:white; border-radius:0.25rem; box-shadow:0 0 10px #b5b2b2; padding:2rem;}
+        .certificate-card h1 { font-size:1.875rem; font-weight:normal; color:#333; margin-bottom:1rem;}
+        .certificate-card hr { border:none; border-top:1px solid #d1d5db; margin-bottom:1.5rem;}
+        .certificate-details { display:flex; flex-direction:column; gap:1rem; color:#666;}
+        .detail-label { font-weight:bold; color:#333;}
+        /* Footer */
+        footer { background-color:#00232D; color:white; padding-top:4rem; padding-bottom:2rem;}
+        .footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-bottom:3rem;}
+        .footer-section h3 { font-size:1.25rem; font-weight:600; margin-bottom:1.5rem;}
+        .footer-section p { font-size:0.875rem; color:rgba(255,255,255,0.7); line-height:1.6; text-align:justify; margin-bottom:1rem;}
+        .footer-links { list-style:none; display:flex; flex-direction:column; gap:0.75rem;}
+        .footer-links a { font-size:0.875rem; color:rgba(255,255,255,0.7); transition:color 0.3s;}
+        .footer-links a:hover { color:white;}
+        .contact-section { display:flex; flex-direction:column; gap:1rem;}
+        .contact-item h4 { font-weight:600; font-size:0.875rem; margin-bottom:0.25rem;}
+        .contact-link { display:flex; align-items:center; gap:0.5rem; font-size:0.875rem; color:rgba(255,255,255,0.7); transition:color 0.3s;}
+        .contact-link:hover { color:white;}
+        .footer-copyright { border-top:1px solid rgba(255,255,255,0.2); padding-top:1.5rem; text-align:center;}
+        .footer-logo { display:flex; align-items:center; gap:0.75rem; margin-bottom:1.5rem;}
+        .footer-logo svg { width:40px; height:40px; }
+        @media(max-width:768px){ .top-bar-content{flex-direction:column; gap:0.5rem; text-align:center;} .header-content{flex-direction:column; gap:1rem;} .footer-grid{grid-template-columns:1fr;} .certificate-card{margin:2rem auto; padding:1.5rem;} }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="mailto:cprregistration@sha.org.sa" class="top-bar-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M22 7L12 13L2 7"/>
+                        </svg>
+                        <span>cprregistration@sha.org.sa</span>
+                    </a>
+                    <a href="tel:+966920000742" class="top-bar-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <span>+966 92 000 0742</span>
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="https://shacpr.org.sa/Home/Index">Administration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section" style="background-color: white;">
+                    <!-- مجرد صورة بدون نص -->
+                    <a href="https://shacpr.org.sa/Home/Index"><img src="https://shacpr.org.sa/images/sha.png" alt="SHA Logo" style="height:50px; width:auto;"></a>
+                </div>
+                <div class="header-icons">
+                    <button class="icon-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+                        </svg>
+                        <span class="notification-badge">2</span>
+                    </button>
+                    <button class="icon-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="page-title"><h2>Certificate Verification</h2></div>
+            <div class="certificate-card">
+                <h1>Certificate Details</h1>
+                <hr>
+                <div class="certificate-details">
+                    <p><span class="detail-label">Certificate Holder Name:</span> MOHAMMED MAJRASHI</p>
+                    <p><span class="detail-label">Course Name:</span> SHA NRP Provider Course</p>
+                    <p><span class="detail-label">Certificate Valid From:</span> 16-Nov-2025</p>
+                    <p><span class="detail-label">Certificate Expiry Date:</span> 25-Nov-2025</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <div class="footer-logo" >
+                        <a href="https://shacpr.org.sa/Home/Index"><img src="https://shacpr.org.sa/images/sha.png" alt="SHA Logo" style="height:50px; width:auto;"></a>
+                    </div>
+                    <h3>About Us</h3>
+                    <p>The Saudi Heart Association, hereafter called "The Association" is recognized at its premises and may have more chapters in other locations if needed.</p>
+                    <p>The progression and development of the scientific thinking in the speciality of the Association.</p>
+                </div>
+
+                <!-- Popular Courses -->
+                <div class="footer-section">
+                    <h3>Popular Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://shacpr.org.sa/Home/Index">SHA BLS Provider</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">SHA ACLS Provider</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">SHA PALS Provider</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">SHA NRP Provider</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">SHA HSFA CPR AED</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://shacpr.org.sa/Home/Index">Home</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">Courses</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">Online Courses</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">Training Centers</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">Become Training Center</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">Browse for old cpr website</a></li>
+                        <li><a href="https://shacpr.org.sa/Home/Index">For Instructors and Coordinator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Help -->
+                <div class="footer-section">
+                    <h3>Quick Help</h3>
+                    <div class="contact-section">
+                        <div class="contact-item">
+                            <h4>CPR Chairman</h4>
+                            <a href="mailto:cprchairman@sha.org.sa" class="contact-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 7L12 13L2 7"/>
+                                </svg>
+                                cprchairman@sha.org.sa
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <h4>CPR Registration</h4>
+                            <a href="mailto:cprregistration@sha.org.sa" class="contact-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 7L12 13L2 7"/>
+                                </svg>
+                                cprregistration@sha.org.sa
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <h4>CPR Operation</h4>
+                            <a href="mailto:cproperation@sha.org.sa" class="contact-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 7L12 13L2 7"/>
+                                </svg>
+                                cproperation@sha.org.sa
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <h4>CPR Events</h4>
+                            <a href="mailto:cprevents@sha.org.sa" class="contact-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="M22 7L12 13L2 7"/>
+                                </svg>
+                                cprevents@sha.org.sa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© 2025 National Life Support Committee. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
